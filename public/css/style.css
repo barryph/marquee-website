@@ -1,0 +1,180 @@
+/* Typography */
+
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-family: Open Sans;
+  line-height: 1.45;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+	font-family: 'Open Sans';
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #444;
+  font-family: Roboto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+  //color: #00B7FF;
+  //color: #00afff;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #888;
+}
+
+
+/*
+ * PRESETS
+ */
+
+.dots {
+	color: #00afff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.w-960 {
+	padding: 4rem calc(50% - 480px);
+}
+
+.w-1200 {
+	padding: 4rem calc(50% - 600px);
+}
+
+.primaryHeader {
+	margin-bottom: 2rem;
+	text-align: center;
+	color: #333;
+}
+
+.errorMessage, .successMessage {
+	margin-bottom: 50px;
+	padding: 5px;
+	color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	animation: 0.3s fade-in;
+}
+
+.errorMessage {
+	background-color: rgba(255, 0, 0, 0.7);
+	border-color: rgb(200, 0, 0);
+}
+
+.successMessage {
+	background-color: rgba(0, 200, 0, 0.7);
+	border-color: rgb(0, 200, 0);
+}
+
+
+@media (max-width: 1350px) {
+	.w-1200 {
+		padding: 4rem;
+	}
+}
+
+@media (max-width: 1110px) {
+	.w-960 {
+		padding: 4rem;
+	}
+}
+
+@media (max-width: 750px) {
+	.w-960, .w-1200 {
+		padding: 2.5rem;
+	}
+}
+
+@media (max-width: 650px) {
+	.w-1200 {
+		padding: 2.5rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.w-960, .w-1200 {
+		padding: 2.5rem 1.5rem;
+	}
+}
+
+
+/* Page header */
+
+#siteHeader {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.logo {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.logo img {
+	height: 1.7rem;
+	vertical-align: middle;
+}
+
+#siteHeader nav {
+	display: inline-block;
+}
+
+#siteHeader nav a {
+	display: inline-block;
+	padding: 0 1rem;
+	line-height: 1.8rem;
+}
+
+#siteHeader .download-button {
+	padding: 0 1rem;
+	height: 100%;
+	border: 0;
+	cursor: pointer;
+	background-color: #00afff;
+	color: #fff;
+	font-weight: bold;
+}
