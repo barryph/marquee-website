@@ -164,9 +164,7 @@ hr {
 }
 
 #siteHeader nav a {
-	display: inline-block;
 	padding: 0 1rem;
-	line-height: 1.8rem;
 }
 
 #siteHeader .download-button {
