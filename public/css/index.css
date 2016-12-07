@@ -19,10 +19,6 @@
 }
 
 .heroText {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	flex-grow: 1;
 	text-align: center;
 }
@@ -37,6 +33,7 @@
 
 #hero p {
 	max-width: 500px;
+	margin: auto;
 }
 
 #hero img {
@@ -204,14 +201,13 @@
 	flex-grow: 1;
 	display: flex;
 	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
 	width: 50%;
 }
 
-.logos img {
+.logos img, .logos a {
 	height: 2rem;
-	margin-right: 2rem;
-}
-
-.logos a {
+	margin: 1rem 2rem;
 	font-weight: bold;
 }
