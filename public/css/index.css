@@ -1,11 +1,3 @@
-#siteHeader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: #fff;
-}
-
 #hero {
 	display: flex;
 	justify-content: space-between;
@@ -19,21 +11,21 @@
 }
 
 .heroText {
+	margin: 1.0rem 0 3rem;
 	flex-grow: 1;
 	text-align: center;
 }
 
-#hero h2, #hero h3 {
+#hero h2, #hero h4 {
 	margin-top: 0;
 }
 
 #hero h2 {
+	display: inline-block;
+	margin-top: 0.7rem;
+	padding: 0.5rem 1.2rem;
+	border: 5px solid rgba(255, 255, 255, 0.7);
 	font-weight: bold;
-}
-
-#hero p {
-	max-width: 500px;
-	margin: auto;
 }
 
 #hero img {
@@ -48,8 +40,7 @@
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	background-color: #f2f2f2;
-	//border: 0px solid #ececec;
+	border: 0px solid #ececec;
 	border-top-width: 1px;
 	border-bottom-width: 1px;
 }
@@ -63,10 +54,10 @@
 }
 
 .special .image-wrapper {
-	height: 100px;
-	width: 100px;
+	height: 75px;
+	width: 75px;
 	margin: auto;
-	background-color: #FF2137;
+	//background-color: #FF2137;
 	border-radius: 100%;
 	margin-bottom: 1rem;
 }
@@ -75,7 +66,7 @@
 	max-width: 150px;
 	height: 100%;
 	width: 100%;
-	padding: 20%;
+	padding: 10%;
 }
 
 .special header {
@@ -98,10 +89,15 @@
 }
 
 
+.demo-wrapper {
+	background-color: #f2f2f2;
+}
+
 .demo-header {
 	margin-top: 0;
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
+	font-weight: bold;
 }
 
 .demo {
@@ -131,7 +127,6 @@
 	width: 16%;
 	text-align: center;
 	font-size: 6rem;
-	//color: #00afff;
 }
 
 .rendered-html h3 {
@@ -143,15 +138,10 @@
 
 .split-feature {
 	display: flex;
-	border-top: 1px solid #ececec;
 }
 
 .split-feature:last-child {
-	border-bottom: 1px solid #ececec;
-}
-
-.split-feature:nth-child(odd) .image-wrapper {
-	order: 2;
+	border-bottom: 0px;
 }
 
 .split-feature .image-wrapper, .split-feature .text {
@@ -159,7 +149,12 @@
 	width: 50%;
 }
 
+.split-feature .text {
+	width: 66%;
+}
+
 .split-feature .image-wrapper {
+	width: 33%;
 }
 
 .split-feature .image-wrapper img {
@@ -169,8 +164,12 @@
 	margin: auto;
 }
 
+.feature-header:first-letter {
+}
+
 .feature-header {
 	margin-top: 0;
+	font-weight: bold;
 }
 
 .split-feature .dots {

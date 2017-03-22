@@ -4,7 +4,7 @@ html {font-size: 1em;}
 
 body {
   background-color: white;
-  font-family: Open Sans;
+  font-family: 'Roboto';
   line-height: 1.45;
 }
 
@@ -14,7 +14,6 @@ h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-	font-family: 'Open Sans';
 }
 
 h1 {
@@ -38,7 +37,6 @@ small, .font_small {font-size: 0.707em;}
 body {
 	margin: 0;
 	color: #444;
-  font-family: Roboto;
 }
 
 a {
@@ -143,18 +141,25 @@ hr {
 /* Page header */
 
 #siteHeader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	color: #fff;
+	font-weight: bold;
 }
 
 .logo {
 	font-size: 1.2rem;
-	font-weight: bold;
 }
 
 .logo img {
+	margin-right: 0.5rem;
 	height: 1.7rem;
 	vertical-align: middle;
 }
@@ -172,7 +177,4 @@ hr {
 	height: 100%;
 	border: 0;
 	cursor: pointer;
-	background-color: #00afff;
-	color: #fff;
-	font-weight: bold;
 }
