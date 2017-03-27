@@ -81,10 +81,11 @@ hr {
 	padding: 4rem calc(50% - 600px);
 }
 
-.primaryHeader {
-	margin-bottom: 2rem;
+.section-header {
+	margin-top: 0;
 	text-align: center;
-	color: #333;
+	margin-bottom: 4rem;
+	font-weight: bold;
 }
 
 .errorMessage, .successMessage {
