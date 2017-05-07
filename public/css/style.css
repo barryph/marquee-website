@@ -38,6 +38,11 @@ body {
 	color: #444;
 }
 
+header, h1, h2, h3, h4 {
+	font-family: 'Source Sans Pro';
+	font-weight: bold;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -55,8 +60,10 @@ ul {
 }
 
 hr {
+	width: 50px;
 	border: 0;
-	border-bottom: 1px solid #888;
+	border-bottom: 2px solid #aaa;
+	vertical-align: middle;
 }
 
 
@@ -73,11 +80,11 @@ hr {
 }
 
 .w-960 {
-	padding: 4rem calc(50% - 480px);
+	padding: 5rem calc(50% - 480px);
 }
 
 .w-1200 {
-	padding: 4rem calc(50% - 600px);
+	padding: 5rem calc(50% - 600px);
 }
 
 .section-header {
@@ -114,7 +121,7 @@ hr {
 
 @media (max-width: 1350px) {
 	.w-1200 {
-		padding: 4rem;
+		padding: 5rem;
 	}
 }
 
