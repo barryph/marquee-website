@@ -8,6 +8,10 @@ body {
 	color: #fff;
 }
 
+header, h1, h2, h3, h4 {
+	font-family: 'Lato';
+}
+
 .downloads {
 	text-align: center;
 }
