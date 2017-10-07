@@ -152,7 +152,7 @@ hr {
 
 /* Page header */
 
-#siteHeader {
+.site-header {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -176,10 +176,10 @@ hr {
 	vertical-align: middle;
 }
 
-#siteHeader nav {
+.site-header nav {
 	display: inline-block;
 }
 
-#siteHeader nav a {
+.site-header nav a {
 	padding: 0 1rem;
 }

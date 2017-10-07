@@ -16,7 +16,7 @@ header, h1, h2, h3, h4 {
 	text-align: center;
 }
 
-.osList {
+.os-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
