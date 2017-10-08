@@ -9,12 +9,10 @@
 <body>
 	<% include layoutBody %>
 
-	<div id='hero' class='w-960'>
+	<div class='w-960 hero'>
 		<div class='hero-text'>
-			<h2 class='hero-header'>Marquee</h2>
-			<h4 class='hero-subtext'>Markdown notes, keep it simple.</h4>
-			<a class='button-primary' href='/download'>Download</a>
-			<a href='#more'>Read More &darr;</a>
+			<h1 class='hero-header'>Marquee</h1>
+			<h3 class='hero-subtext'>Markdown notes, kept simple.</h3>
 		</div>
 		<img src='/img/markitdown.png' alt='MarkItDown'>
 	</div>
@@ -22,102 +20,76 @@
 	<div class='w-960 specials'>
 		<div class='special'>
 			<div class='image-wrapper'>
-				<img src='/img/open-source.svg'>
+				<img src='/img/icon-git.png'>
 			</div>
 			<h4>Open Source</h4>
-			<p>Ipsum consectetur voluptatum molestias ducimus doloremque.</p>
+			<p>Consectetur dolore esse voluptates id Quisquam qui libero reprehenderit necessitatibus numquam, quae Repellat laborum.</p>
 		</div>
 		<div class='special'>
 			<div class='image-wrapper'>
-				<img src='/img/heart.svg'>
+				<img src='/img/icon-pocket.png'>
 			</div>
-			<h4>Free</h4>
-			<p>Ipsum consectetur voluptatum molestias ducimus doloremque.</p>
+			<h4>Cross Platform</h4>
+			<p>Lorem non sit nostrum laborum asperiores? Ipsa ad aliquam aperiam tenetur praesentium? Voluptate temporibus architecto.</p>
 		</div>
 		<div class='special'>
 			<div class='image-wrapper'>
-				<img src='/img/cross-platform.svg'>
+				<img src='/img/icon-world.png'>
 			</div>
-			<h4>Cross platform</h4>
-			<p>Ipsum consectetur voluptatum molestias ducimus doloremque.</p>
+			<h4>More coming</h4>
+			<p>Adipisicing incidunt cupiditate nostrum beatae autem. Ex doloribus magni quia dolor inventore, odio.</p>
 		</div>
+	</div>
+
+	<div class='w-960 downloads'>
+		<div class='number'>1</div>
+
+		<h3 class='text-center'>Download Executable</h3>
+
+		<div class='os-list'>
+			<a class='os' href='#'>
+				<div class='container'>
+					<img src='/img/mac.ico'>
+					<h4>Mac</h4>
+				</div>
+			</a>
+
+			<a class='os highlight' href='#'>
+				<div class='container'>
+					<img src='/img/linux.ico'>
+					<h4>Linux</h4>
+				</div>
+			</a>
+
+			<a class='os' href='#'>
+				<div class='container'>
+					<img src='/img/windows.ico'>
+					<h4>Windows</h4>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class='w-400 installation text-center'>
+		<div class='number'>2</div>
+
+		<h3 class='text-center'>Manual Installaion</h3>
+
+		<h5 class='step-title'>1. Clone from github</h5>
+		<code>git clone https://github.com/BarryPH/marquee</code>
+
+		<h5 class='step-title'>2. Install dependencies</h5>
+		<code>cd marquee</code>
+		<code>npm i</code>
+
+		<h5 class='step-title'>3. Run with electron</h5>
+		<code>electron</code>
 	</div>
 
 	<div class='w-960 demo'>
-		<h2 class='section-header'>Simplicty of Markdown<hr></h2>
-
-		<h4>Headings</h4>
-		<div class='demo-item'>
-			<pre class='markdown'>
-<code># Primary
-## Secondary
-### Tertiary
-</code>
-			</pre>
-
-			<div class='rendered-html'>
-				<h1>Primary</h1>
-				<h2>Secondary</h2>
-				<h3>Tertiary</h3>
-			</div>
-		</div>
-
-		<h4>Lists</h4>
-		<div class='demo-item'>
-			<pre class='markdown'>
-<code>**A list of items:**
-
-* Item one
-* Item two
- * Sub item
-* Item three
-</code>
-			</pre>
-
-			<div class='rendered-html'>
-				<b>A list of items:</b>
-				<ul>
-					<li>Item One</li>
-					<li>Item Two</li>
-					<ul>
-						<li>Sub item</li>
-					</ul>
-					<li>Item Three</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class='w-960 demo-wrapper'>
-		<h2 class='section-header'>Write markdown <br> Read formatted text<hr></h2>
+		<h3 class='section-header'>Write markdown, <br> Read text</h3>
 
 		<video class='demo-video' src='/vid/markitdown.webm' autoplay controls></video>
-	</div>
-
-	<div class='w-960'>
-		<h2 class='section-header'>Top Features Of Marquee<hr></h2>
-
-		<div class='split-feature'>
-			<div class='image-wrapper'>
-				<img src='/img/bookmark.png' alt='Cloud Storage image'>
-			</div>
-
-			<div class='text'>
-				<h3 class='feature-header'>&#10004; Keep you data safe</h3>
-				<p>Elit incidunt molestiae repudiandae distinctio exercitationem, labore Accusamus quo corrupti nobis ad debitis? Repellat cumque vel modi ipsum consectetur. Cupiditate? Elit incidunt molestiae repudiandae distinctio exercitationem, labore Accusamus quo corrupti nobis ad debitis? Repellat cumque vel modi ipsum consectetur. Cupiditate?</p>
-			</div>
-		</div>
-
-		<div class='split-feature'>
-			<div class='image-wrapper'>
-				<img src='/img/bookmark.png' alt='Cloud Storage image'>
-			</div>
-
-			<div class='text'>
-				<h3 class='feature-header'>&#10004; Cloud storage for your files</h3>
-				<p>Elit incidunt molestiae repudiandae distinctio exercitationem, labore Accusamus quo corrupti nobis ad debitis? Repellat cumque vel modi ipsum consectetur. Cupiditate? Elit incidunt molestiae repudiandae distinctio exercitationem, labore Accusamus quo corrupti nobis ad debitis? Repellat cumque vel modi ipsum consectetur. Cupiditate?</p>
-			</div>
-		</div>
 	</div>
 
 	<div class='w-960 made-by'>

@@ -1,4 +1,6 @@
-/* Typography */
+/*
+ * Typography
+ */
 
 html {font-size: 1em;}
 
@@ -35,19 +37,17 @@ small, .font_small {font-size: 0.707em;}
 
 body {
 	margin: 0;
-	color: #444;
+	color: #333;
 }
 
 header, h1, h2, h3, h4 {
-	font-family: 'Source Sans Pro';
-	font-weight: bold;
+	font-family: 'Montserrat';
+	font-weight: 800;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
-  //color: #00B7FF;
-  //color: #00afff;
 }
 
 a:hover {
@@ -60,15 +60,15 @@ ul {
 }
 
 hr {
-	width: 50px;
+	width: 100px;
 	border: 0;
-	border-bottom: 2px solid #aaa;
+	border-bottom: 8px solid #eaeaea;
 	vertical-align: middle;
 }
 
 
 /*
- * PRESETS
+ * Presets
  */
 
 .dots {
@@ -77,6 +77,10 @@ hr {
 	font-weight: bold;
 	line-height: 1rem;
 	text-align: center;
+}
+
+.w-400 {
+	padding: 5rem calc(50% - 200px);
 }
 
 .w-960 {
@@ -118,6 +122,10 @@ hr {
 	border-color: rgb(0, 200, 0);
 }
 
+.text-center {
+	text-align: center;
+}
+
 
 @media (max-width: 1350px) {
 	.w-1200 {
@@ -150,7 +158,60 @@ hr {
 }
 
 
-/* Page header */
+/*
+ * OS List
+ */
+
+.os-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.os {
+	flex-grow: 1;
+	display: inline-block;
+	min-width: 33%;
+	width: 250px;
+}
+
+.os.highlight .container {
+	display: inline-block;
+	background-color: #fff;
+	box-shadow: 0 3px 13px #ccc;
+	padding: 3.5rem;
+}
+
+.os:not(.highlight) {
+	margin-top: 3.5rem;
+}
+
+.os img {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+@media (max-width: 800px) {
+	.os-list {
+		flex-direction: column;
+	}
+
+	.os {
+		order: 2;
+	}
+
+	.os.highlight {
+		order: 1;
+	}
+}
+
+
+/*
+ * Page header
+ */
 
 .site-header {
 	position: absolute;
@@ -163,11 +224,8 @@ hr {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	color: #fff;
-	font-weight: bold;
-}
-
-.logo {
-	font-size: 1.2rem;
+	font-weight: normal;
+	font-family: 'Montserrat';
 }
 
 .logo img {

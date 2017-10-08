@@ -11,26 +11,3 @@ body {
 header, h1, h2, h3, h4 {
 	font-family: 'Lato';
 }
-
-.downloads {
-	text-align: center;
-}
-
-.os-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: 5rem;
-}
-
-.os {
-	flex-grow: 1;
-	display: inline-block;
-	min-width: 33%;
-	width: 250px;
-}
-
-.os img {
-	max-width: 100px;
-	max-height: 100px;
-}
