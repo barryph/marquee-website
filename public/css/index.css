@@ -1,17 +1,16 @@
 .number {
-	font-weight: 800;
-	font-size: 1.7rem;
+	margin-top: 0;
 	text-align: center;
 	margin-bottom: 2rem;
+	font-family: var(--font-header);
 }
 
 .hero {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	padding-top: 7rem;
+	padding-top: 8rem;
 	padding-bottom: 0;
-	background: linear-gradient(to bottom right, #007fff, #00afff 50%);
 	color: #fff;
 	overflow: hidden;
 }
@@ -31,7 +30,7 @@
 
 .hero-subtext {
 	margin: auto;
-	margin-bottom: 3.5rem;
+	margin-bottom: 3rem;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -101,26 +100,26 @@
 	}
 }
 
-.downloads {
-	background-color: #f0f0f0;
+.bg--alt {
+	background: linear-gradient(to bottom right, #007fff, #00afff 50%);
+	color: #fff;
 }
 
 
 .step-title {
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: normal;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
+	text-transform: uppercase;
 }
 
 .installation code {
 	display: block;
 	padding: 0.6rem 0.9rem;
-	background-color: #f0f0f0;
-}
-
-code + code {
-	border-top: 1px solid #ddd;
+	background-color: #f5f6fa;
+	border: 1px solid #eaeaea;
+	font-family: 'Anonymous Pro';
 }
 
 
@@ -136,15 +135,16 @@ code + code {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #f0f0f0;
 	align-items: center;
 	text-align: center;
+	background-color: #f5f6fa;
 }
 
 .made-by-header {
 	margin-top: 0;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.3rem;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .logos {

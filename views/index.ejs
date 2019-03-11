@@ -9,12 +9,12 @@
 <body>
 	<% include layoutBody %>
 
-	<div class='w-960 hero'>
+	<div class='w-960 hero bg--alt'>
 		<div class='hero-text'>
 			<h1 class='hero-header'>Marquee</h1>
 			<h3 class='hero-subtext'>Markdown notes, kept simple.</h3>
 		</div>
-		<img src='/img/markitdown.png' alt='MarkItDown'>
+		<img src='/img/marquee.png' alt='Marquee Screenshot'>
 	</div>
 
 	<div class='w-960 specials'>
@@ -23,77 +23,76 @@
 				<img src='/img/icon-git.png'>
 			</div>
 			<h4>Open Source</h4>
-			<p>Consectetur dolore esse voluptates id Quisquam qui libero reprehenderit necessitatibus numquam, quae Repellat laborum.</p>
+			<p>100% open source software. All the source code is hosted and avaliable on github.</p>
 		</div>
 		<div class='special'>
 			<div class='image-wrapper'>
 				<img src='/img/icon-pocket.png'>
 			</div>
 			<h4>Cross Platform</h4>
-			<p>Lorem non sit nostrum laborum asperiores? Ipsa ad aliquam aperiam tenetur praesentium? Voluptate temporibus architecto.</p>
+			<p>Supports many operating systems including Linux, Mac and Windows.</p>
 		</div>
 		<div class='special'>
 			<div class='image-wrapper'>
 				<img src='/img/icon-world.png'>
 			</div>
 			<h4>More coming</h4>
-			<p>Adipisicing incidunt cupiditate nostrum beatae autem. Ex doloribus magni quia dolor inventore, odio.</p>
+			<p>Future features include cross-device sync via cloud storage making your notes avalible on all your devices all at once.</p>
 		</div>
 	</div>
 
-	<div class='w-960 downloads'>
-		<div class='number'>1</div>
-
-		<h3 class='text-center'>Download Executable</h3>
+	<div class='w-960 downloads bg--alt'>
+		<h2 class='number'>1. Download Executable</h2>
 
 		<div class='os-list'>
 			<a class='os' href='#'>
 				<div class='container'>
 					<img src='/img/mac.ico'>
-					<h4>Mac</h4>
+					<h4 class='os__header'>Mac</h4>
 				</div>
 			</a>
 
 			<a class='os highlight' href='#'>
 				<div class='container'>
 					<img src='/img/linux.ico'>
-					<h4>Linux</h4>
+					<h4 class='os__header'>Linux</h4>
 				</div>
 			</a>
 
 			<a class='os' href='#'>
 				<div class='container'>
 					<img src='/img/windows.ico'>
-					<h4>Windows</h4>
+					<h4 class='os__header'>Windows</h4>
 				</div>
 			</a>
 		</div>
 	</div>
 
-	<div class='w-400 installation text-center'>
-		<div class='number'>2</div>
-
-		<h3 class='text-center'>Manual Installaion</h3>
+	<div class='w-600 installation'>
+		<h2 class='number'>2. Manual Installaion</h2>
 
 		<h5 class='step-title'>1. Clone from github</h5>
-		<code>git clone https://github.com/BarryPH/marquee</code>
+		<code>$ git clone https://github.com/BarryPH/marquee</code>
 
 		<h5 class='step-title'>2. Install dependencies</h5>
-		<code>cd marquee</code>
-		<code>npm i</code>
+		<code>
+			$ cd marquee
+			<br />
+			$ npm i
+		</code>
 
 		<h5 class='step-title'>3. Run with electron</h5>
-		<code>electron</code>
+		<code>$ electron .</code>
 	</div>
 
 	<div class='w-960 demo'>
-		<h3 class='section-header'>Write markdown, <br> Read text</h3>
+		<h2 class='section-header'>Write markdown, <br> Read plain text</h2>
 
 		<video class='demo-video' src='/vid/markitdown.webm' autoplay controls></video>
 	</div>
 
 	<div class='w-960 made-by'>
-		<h3 class='made-by-header'>Built Using</h3>
+		<h4 class='made-by-header'>Made With</h4>
 
 		<div class='logos'>
 			<a href='#'><img src='/img/electron.svg'></a>

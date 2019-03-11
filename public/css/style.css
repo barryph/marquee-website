@@ -79,8 +79,8 @@ hr {
 	text-align: center;
 }
 
-.w-400 {
-	padding: 5rem calc(50% - 200px);
+.w-600 {
+	padding: 5rem calc(50% - 300px);
 }
 
 .w-960 {
@@ -181,8 +181,9 @@ hr {
 .os.highlight .container {
 	display: inline-block;
 	background-color: #fff;
+	color: #333;
 	box-shadow: 0 3px 13px #ccc;
-	padding: 3.5rem;
+	padding: 3.5rem 3.2rem 3rem;
 }
 
 .os:not(.highlight) {
@@ -192,6 +193,11 @@ hr {
 .os img {
 	max-width: 100px;
 	max-height: 100px;
+}
+
+.os .os__header {
+	margin: 0;
+	margin-top: 1.6rem;
 }
 
 @media (max-width: 800px) {
@@ -221,16 +227,21 @@ hr {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	color: #fff;
-	font-weight: normal;
-	font-family: 'Montserrat';
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .logo img {
-	margin-right: 0.5rem;
-	height: 1.7rem;
+	margin-top: 0.1rem;
+	margin-right: 0.2rem;
+	height: 1.6rem;
+}
+
+.logo img,
+.logo span {
 	vertical-align: middle;
 }
 
