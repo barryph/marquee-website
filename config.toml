@@ -1,0 +1,12 @@
+languageCode = "en-us"
+
+name = "Marquee Website"
+license = "MIT"
+description = ""
+tags = []
+features = []
+min_version = "0.01"
+
+[author]
+  name = ""
+  homepage = ""

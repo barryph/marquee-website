@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>
+		{{ block "title" . }}
+		{{ .Site.Title }}
+		{{ end }}
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	{{ $style := resources.Get "css/style.css" }}
+	<link rel='stylesheet' href='{{ $style.Permalink }}'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:regular,bold,200i|Lato:regular,bold'>
+
+	{{ block "head" . }}
+	{{ end }}
+</head>
+<body>
+	<div class='w-960 site-header'>
+		<a class='logo' href='/'><img src='/img/bookmark.png'><span>Marquee</span></a>
+		<nav>
+			<a href='/download'>Download</a>
+			<a href='https://github.com/barryph/marquee'>GitHub</a>
+		</nav>
+	</div>
+
+	{{ block "main" . }}
+	{{ end }}
+
+	{{ block "footer" . }}
+	{{ end }}
+</body>
+</html>
