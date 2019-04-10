@@ -106,7 +106,7 @@
 
 .installation__terminal {
 	display: block;
-	padding: 0.6rem 0.9rem;
+	padding: 1.1rem 1.3rem;
 	background-color: #f5f6fa;
 	border: 1px solid #eaeaea;
 	font-family: 'Anonymous Pro';
@@ -174,9 +174,7 @@
 
 .made-by-header {
 	margin-top: 0;
-	margin-bottom: 1.3rem;
-	padding-bottom: 0.2rem;
-	border-bottom: 1px solid #bbb;
+	margin-bottom: 1.5rem;
 	font-weight: 200;
 }
 

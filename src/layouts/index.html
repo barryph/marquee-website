@@ -1,14 +1,9 @@
-<!DOCTYPE html>
+{{ define "head" }}
+	{{ $style := resources.Get "css/index.css" }}
+	<link rel='stylesheet' href='{{ $style.Permalink }}'>
+{{ end }}
 
-<html>
-<head>
-	<title><%= title %></title>
-	<% include layoutHead %>
-	<link rel='stylesheet' href='/css/index.css'>
-</head>
-<body>
-	<% include layoutBody %>
-
+{{ define "main" }}
 	<div class='w-960 hero bg--alt'>
 		<div class='hero-text'>
 			<h1 class='hero-header'>Marquee</h1>
@@ -121,5 +116,4 @@
 			<a href='#'>Marked</a>
 		</div>
 	</div>
-</body>
-</html>
+{{ end }}

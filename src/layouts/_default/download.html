@@ -1,14 +1,9 @@
-<!DOCTYPE html>
+{{ define "head" }}
+	{{ $style := resources.Get "css/download.css" }}
+	<link rel='stylesheet' href='{{ $style.Permalink }}'>
+{{ end }}
 
-<html>
-<head>
-	<title><%= title %></title>
-	<% include layoutHead %>
-	<link rel='stylesheet' href='/css/download.css'>
-</head>
-<body>
-	<% include layoutBody %>
-
+{{ define "main" }}
 	<div class='w-960 downloads'>
 		<h1 class='section-header section-header--low downloads__header'>Downloads</h1>
 
@@ -18,7 +13,7 @@
 				<h4 class='os__header'>Mac</h4>
 			</a>
 
-			<a class='os' href='/bin/marquee 0.0.1.AppImage' download='Marquee.AppImage'>
+			<a class='os highlight' href='/bin/marquee 0.0.1.AppImage' download='Marquee.AppImage'>
 				<img src='/img/linux.ico'>
 				<h4 class='os__header'>Linux</h4>
 			</a>
@@ -29,5 +24,4 @@
 			</a>
 		</div>
 	</div>
-</body>
-</html>
+{{ end }}
