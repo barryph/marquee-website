@@ -1,4 +1,6 @@
 .hero {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -6,6 +8,21 @@
 	padding-bottom: 0;
 	color: #fff;
 	overflow: hidden;
+}
+
+/* Rotated bg */
+.hero::after {
+	position: absolute;
+	bottom: 15%;
+	left: -50%;
+	right: -50%;
+	z-index: 1;
+
+	content: '';
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(to bottom right, #007fff, #00afff 50%);
+	transform: rotate(-2deg);
 }
 
 .hero-text {
@@ -23,10 +40,16 @@
 .hero-subtext {
 	display: inline-block;
 	margin: auto;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	padding-bottom: 0.25rem;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-	font-weight: 200;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+
+.hero-text,
+.hero img {
+	/* Overlay rotated bg */
+	z-index: 9;
 }
 
 .hero img {
@@ -40,13 +63,9 @@
 
 
 .specials {
-	--offset: 7%;
-
 	display: flex;
-	padding-top: calc(4rem + var(--offset));
-	padding-bottom: 4rem;
+	padding-bottom: 3rem;
 	text-align: center;
-	margin-top: calc(-1 * var(--offset));
 	background-color: #fff;
 }
 
@@ -104,15 +123,63 @@
  * Installation
  */
 
+.installation__header {
+	margin-bottom: 2rem;
+}
+
+.installation__subheader {
+	max-width: 500px;
+	margin: auto;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
 .installation__terminal {
 	display: block;
 	padding: 1.1rem 1.3rem;
 	background-color: #f5f6fa;
-	border: 1px solid #eaeaea;
 	font-family: 'Anonymous Pro';
-	background-color: #272525;
+	background-color: #1F2034;
 	color: #fff;
 	/*! color: #56cf5b; */
+	box-shadow: 1px 9px 19px 2px #1F203449;
+}
+
+.download-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	background-color: #F5F6FA;
+	padding: 1rem 2.8rem;
+	box-shadow: 1px 9px 19px 2px #1F203429;
+}
+
+.download-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.download-arrow {
+	transform: rotate(90deg);
+	font-size: 4rem;
+	margin-right: 0.7rem;
+}
+
+.download-header {
+	margin: 0;
+	font-weight: 300;
+}
+
+.download-button {
+	padding: 1rem 2.8rem;
+	border: 0;
+	border-radius: 28px;
+	background: #2D8DE3;
+	color: #fff;
+	box-shadow: 1px 9px 19px 2px #1F203449;
+	font-weight: bold;
 }
 
 
@@ -167,15 +234,16 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #f5f6fa;
-	padding-top: 3.5rem;
-	padding-bottom: 3.5rem;
+	border-top: 1px solid #eaeaea;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .made-by-header {
 	margin-top: 0;
-	margin-bottom: 1.5rem;
-	font-weight: 200;
+	margin-bottom: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .logos {

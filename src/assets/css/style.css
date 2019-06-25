@@ -45,9 +45,10 @@ header, h1, h2, h3, h4 {
 	font-weight: 800;
 }
 
-a {
+a, button {
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
 }
 
 a:hover {
@@ -80,15 +81,15 @@ hr {
 }
 
 .w-800 {
-	padding: 6rem calc(50% - 400px);
+	padding: 7rem calc(50% - 400px);
 }
 
 .w-960 {
-	padding: 6rem calc(50% - 480px);
+	padding: 7rem calc(50% - 480px);
 }
 
 .w-1200 {
-	padding: 6rem calc(50% - 600px);
+	padding: 7rem calc(50% - 600px);
 }
 
 .section-header {
@@ -232,6 +233,7 @@ hr {
 
 .site-header {
 	position: absolute;
+	z-index: 9;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -241,7 +243,7 @@ hr {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	color: #fff;
-	font-weight: 400;
+	font-weight: bold;
 	text-transform: uppercase;
 	font-family: 'Montserrat';
 }
