@@ -114,6 +114,12 @@ hr {
 	text-transform: capitalize;
 }
 
+@media (max-width: 600px) {
+	.section-header--low {
+		margin-bottom: 4rem;
+	}
+}
+
 .button-primary {
 	background-color: #007fff;
 	padding: 0.7rem 1.5rem;
@@ -156,19 +162,13 @@ hr {
 }
 
 @media (max-width: 750px) {
-	.w-960, .w-1200 {
-		padding: 2.5rem;
-	}
-}
-
-@media (max-width: 650px) {
-	.w-1200 {
-		padding: 2.5rem;
+	.w-800, .w-960, .w-1200 {
+		padding: 3.3rem 2.5rem;
 	}
 }
 
 @media (max-width: 400px) {
-	.w-960, .w-1200 {
+	.w-800, .w-960, .w-1200 {
 		padding: 2.5rem 1.5rem;
 	}
 }
@@ -197,6 +197,7 @@ hr {
 	display: inline-block;
 }
 
+/* .highlight will be heightest on large or mobile screens */
 .os:not(.highlight) {
 	margin-top: 1.5rem;
 }
@@ -215,10 +216,15 @@ hr {
 @media (max-width: 800px) {
 	.os-list {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.os {
 		order: 2;
+	}
+
+	.os:not(.highlight) {
+		margin-top: 3rem;
 	}
 
 	.os.highlight {
@@ -241,7 +247,7 @@ hr {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 0;
 	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -250,7 +256,7 @@ hr {
 
 .logo img {
 	margin-top: 0.1rem;
-	margin-right: 0.2rem;
+	margin-right: 0.4rem;
 	height: 1.6rem;
 }
 
@@ -265,4 +271,14 @@ hr {
 
 .site-header nav a {
 	padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+	.site-header {
+		text-transform: capitalize;
+	}
+
+	.site-header nav a {
+		padding: 0 0.5rem;
+	}
 }
